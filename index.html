@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Penjualan Tiket Travel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Penjualan Tiket Travel</h1>
+    <div id="ticket-form">
+        <label for="destination">Tujuan:</label>
+        <select id="destination">
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bali">Bali</option>
+            <option value="Yogyakarta">Yogyakarta</option>
+        </select>
+
+        <input type="number" id="ticket-amount" min="1" max="10" required placeholder="Jumlah Tiket">
+
+        <label for="is-member">Member:</label>
+        <input type="checkbox" id="is-member">
+
+        <input type="text" id="ticket-name" required placeholder="Nama Lengkap">
+
+        <button id="calculate">Hitung Total</button>
+
+        <label for="ticket-discount">Nama Penumpang:</label>
+        <input type="text" id="name-ticket" disabled>
+
+        <label for="ticket-price">Harga Tiket:</label>
+        <input type="text" id="ticket-price" disabled>
+
+        <label for="ticket-discount">Diskon:</label>
+        <input type="text" id="ticket-discount" disabled>
+
+        <label for="total-price">Total Bayar:</label>
+        <input type="text" id="total-price" disabled>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
